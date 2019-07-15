@@ -3,13 +3,13 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
+// The link to my project - 
 
 
 /*** 
   I created the array of quote objects and name it `quotes`.
-  Their are five arrays listed `quotes` array.
-  Each object has been assigned a `quote` and `source` property.
+  Their are five arrays listed with various quotes array.
+  Each object has been assigned an `quote` and `source` property.
   In addition, I added the `year` property to at least one object in the array.
   Then in the end I used console.log() to test the code and it worked. I tested this code in google chrome and it seemed to work pretty well**/
 
@@ -51,14 +51,9 @@ let quotes = [
 
 ];
 
-/***console.log(quotes.length [5]);
-console.log(quotes[quotes.length - 1]);
-quotes.push('Go');
-quotes.log(quotes.join());
-
 /***
   I created the function`getRandomQuote` and a variable has been created to store a random number. 
-  The `return` has been set to quotes and will return the randomNumber to***/
+  The `return` has been set to quotes and will return the randomNumber.***/
 
 function getRandomQuote() {
   var randomNumber = Math.floor(Math.random() * quotes.length);
@@ -66,14 +61,12 @@ function getRandomQuote() {
 }
 //console.log(getRandomQuote())  This is what I used to test the actually code;
 
-/**Created the `printQuote` function to: 
-   - I called the `getRandomQuote` function and assign it to a variable.
+/***  Created the `printQuote` function to
+   - I created the `getRandomQuote` function and assign it to a variable.
    - Created a variable for the HTML string and set it equal to an empty string.
-   - I used the HTML template in the instructions or the markup in the index.html file, AND 
-     the random quote variable to build your HTML string.
    - Then I put the quote and source section into the HTML string.
-   - Then the if statement has been added to check for the citation property.
-   - Then the if statement has been added to check for the year property.
+   - I added the if statement for the citation property.
+   - I added the if statement for the for the year property.
    - I have set the `innerHTML` of the `quote-box` div to the HTML string.
    - Then I tested the print quote function and it is working. 
 ***/
@@ -102,10 +95,15 @@ printQuote();
 
 
 /***
-  The button .
+  The button was tested and it works.
 ***/
+{
+document.body.style.background = bgColor;
 
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+document.getElementById('quote-box').innerHTML = message;
+}
+document.getElementById('loadQuote').addEventListener("click",printQuote,false);
 
+refresh();
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
