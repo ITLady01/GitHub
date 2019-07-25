@@ -18,7 +18,7 @@ class Game {
       new Phrase('jazz is smooth and cool'),
       new Phrase('do the hustle'),
       new Phrase('music to my ears'),
-      new Phrase('The only truth is music.')
+      new Phrase('The only truth is music')
     ];
 
 
